@@ -9,7 +9,7 @@ chromy.chain()
     .goto(url)
     // ブラウザ内でJavaScriptを評価する
     .evaluate(_ => {
-        return document.querySelectorAll('*').length
+        return document.querySelectorAll('#react-root section main article div a').length
     })
     .result(r => console.log(r))
     .end()
